@@ -1,0 +1,9 @@
+test_name,unit,reference_low,reference_high
+Glucose,mg/dL,70,100
+Cholesterol_Total,mg/dL,125,200
+Hemoglobin,g/dL,12.0,17.5
+WBC_Count,10^3/uL,4.0,11.0
+Creatinine,mg/dL,0.6,1.3
+ALT,U/L,7,56
+pH_Level,pH,6.8,7.4
+Sodium,mmol/L,135,145

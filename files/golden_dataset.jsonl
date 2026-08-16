@@ -1,0 +1,40 @@
+{"question": "האם דגימה S-10038 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10038", "category": "status_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-Glucose עבור דגימה S-10112?", "expected_answer": "82.16 mg/dL", "expected_sample_id": "S-10112", "category": "value_lookup"}
+{"question": "האם דגימה S-10024 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10024", "category": "status_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10057?", "expected_answer": "0.81 mg/dL", "expected_sample_id": "S-10057", "category": "value_lookup"}
+{"question": "האם דגימה S-10116 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10116", "category": "status_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?", "expected_answer": "31.08 U/L", "expected_sample_id": "S-10090", "category": "value_lookup"}
+{"question": "מה הייתה תוצאת בדיקת ה-Cholesterol_Total עבור דגימה S-10007?", "expected_answer": "118.51 mg/dL", "expected_sample_id": "S-10007", "category": "value_lookup"}
+{"question": "מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10107?", "expected_answer": "0.91 mg/dL", "expected_sample_id": "S-10107", "category": "value_lookup"}
+{"question": "האם דגימה S-10014 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10014", "category": "status_reasoning"}
+{"question": "מהו טווח הייחוס התקין לבדיקת WBC_Count, והאם התוצאה 6.08 10^3/uL של דגימה S-10102 נמצאת בטווח?", "expected_answer": "טווח תקין: 4.0-11.0 10^3/uL. התוצאה בטווח.", "expected_sample_id": "S-10102", "category": "range_reasoning"}
+{"question": "מהו טווח הייחוס התקין לבדיקת Hemoglobin, והאם התוצאה 17.85 g/dL של דגימה S-10129 נמצאת בטווח?", "expected_answer": "טווח תקין: 12.0-17.5 g/dL. התוצאה מחוץ לטווח (OOS).", "expected_sample_id": "S-10129", "category": "range_reasoning"}
+{"question": "האם דגימה S-10096 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10096", "category": "status_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10061?", "expected_answer": "38.38 U/L", "expected_sample_id": "S-10061", "category": "value_lookup"}
+{"question": "מה הייתה תוצאת בדיקת ה-Glucose עבור דגימה S-10099?", "expected_answer": "82.73 mg/dL", "expected_sample_id": "S-10099", "category": "value_lookup"}
+{"question": "האם דגימה S-10021 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "OOS", "expected_sample_id": "S-10021", "category": "status_reasoning"}
+{"question": "מהו טווח הייחוס התקין לבדיקת ALT, והאם התוצאה 43.46 U/L של דגימה S-10189 נמצאת בטווח?", "expected_answer": "טווח תקין: 7-56 U/L. התוצאה בטווח.", "expected_sample_id": "S-10189", "category": "range_reasoning"}
+{"question": "מהו טווח הייחוס התקין לבדיקת pH_Level, והאם התוצאה 6.98 pH של דגימה S-10058 נמצאת בטווח?", "expected_answer": "טווח תקין: 6.8-7.4 pH. התוצאה בטווח.", "expected_sample_id": "S-10058", "category": "range_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-Sodium עבור דגימה S-10008?", "expected_answer": "137.46 mmol/L", "expected_sample_id": "S-10008", "category": "value_lookup"}
+{"question": "מהו טווח הייחוס התקין לבדיקת ALT, והאם התוצאה 64.85 U/L של דגימה S-10082 נמצאת בטווח?", "expected_answer": "טווח תקין: 7-56 U/L. התוצאה מחוץ לטווח (OOS).", "expected_sample_id": "S-10082", "category": "range_reasoning"}
+{"question": "מהו טווח הייחוס התקין לבדיקת Cholesterol_Total, והאם התוצאה 163.85 mg/dL של דגימה S-10026 נמצאת בטווח?", "expected_answer": "טווח תקין: 125-200 mg/dL. התוצאה בטווח.", "expected_sample_id": "S-10026", "category": "range_reasoning"}
+{"question": "מהו טווח הייחוס התקין לבדיקת pH_Level, והאם התוצאה 7.15 pH של דגימה S-10167 נמצאת בטווח?", "expected_answer": "טווח תקין: 6.8-7.4 pH. התוצאה בטווח.", "expected_sample_id": "S-10167", "category": "range_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-Sodium עבור דגימה S-10086?", "expected_answer": "144.47 mmol/L", "expected_sample_id": "S-10086", "category": "value_lookup"}
+{"question": "מהו טווח הייחוס התקין לבדיקת Cholesterol_Total, והאם התוצאה 187.39 mg/dL של דגימה S-10200 נמצאת בטווח?", "expected_answer": "טווח תקין: 125-200 mg/dL. התוצאה בטווח.", "expected_sample_id": "S-10200", "category": "range_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-Cholesterol_Total עבור דגימה S-10036?", "expected_answer": "160.05 mg/dL", "expected_sample_id": "S-10036", "category": "value_lookup"}
+{"question": "האם דגימה S-10010 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10010", "category": "status_reasoning"}
+{"question": "האם דגימה S-10074 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10074", "category": "status_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-WBC_Count עבור דגימה S-10121?", "expected_answer": "7.36 10^3/uL", "expected_sample_id": "S-10121", "category": "value_lookup"}
+{"question": "מהו טווח הייחוס התקין לבדיקת WBC_Count, והאם התוצאה 6.28 10^3/uL של דגימה S-10177 נמצאת בטווח?", "expected_answer": "טווח תקין: 4.0-11.0 10^3/uL. התוצאה בטווח.", "expected_sample_id": "S-10177", "category": "range_reasoning"}
+{"question": "האם דגימה S-10174 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10174", "category": "status_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-WBC_Count עבור דגימה S-10115?", "expected_answer": "8.9 10^3/uL", "expected_sample_id": "S-10115", "category": "value_lookup"}
+{"question": "מהו טווח הייחוס התקין לבדיקת Sodium, והאם התוצאה 138.88 mmol/L של דגימה S-10158 נמצאת בטווח?", "expected_answer": "טווח תקין: 135-145 mmol/L. התוצאה בטווח.", "expected_sample_id": "S-10158", "category": "range_reasoning"}
+{"question": "האם דגימה S-10002 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10002", "category": "status_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-Sodium עבור דגימה S-10186?", "expected_answer": "144.22 mmol/L", "expected_sample_id": "S-10186", "category": "value_lookup"}
+{"question": "מהו טווח הייחוס התקין לבדיקת Cholesterol_Total, והאם התוצאה 156.91 mg/dL של דגימה S-10005 נמצאת בטווח?", "expected_answer": "טווח תקין: 125-200 mg/dL. התוצאה בטווח.", "expected_sample_id": "S-10005", "category": "range_reasoning"}
+{"question": "מהו טווח הייחוס התקין לבדיקת Sodium, והאם התוצאה 141.48 mmol/L של דגימה S-10066 נמצאת בטווח?", "expected_answer": "טווח תקין: 135-145 mmol/L. התוצאה בטווח.", "expected_sample_id": "S-10066", "category": "range_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-Cholesterol_Total עבור דגימה S-10056?", "expected_answer": "168.31 mg/dL", "expected_sample_id": "S-10056", "category": "value_lookup"}
+{"question": "מהו טווח הייחוס התקין לבדיקת Cholesterol_Total, והאם התוצאה 144.75 mg/dL של דגימה S-10039 נמצאת בטווח?", "expected_answer": "טווח תקין: 125-200 mg/dL. התוצאה בטווח.", "expected_sample_id": "S-10039", "category": "range_reasoning"}
+{"question": "האם דגימה S-10141 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?", "expected_answer": "Pass", "expected_sample_id": "S-10141", "category": "status_reasoning"}
+{"question": "מה הייתה תוצאת בדיקת ה-Hemoglobin עבור דגימה S-10156?", "expected_answer": "14.19 g/dL", "expected_sample_id": "S-10156", "category": "value_lookup"}
+{"question": "מהו טווח הייחוס התקין לבדיקת Glucose, והאם התוצאה 66.6 mg/dL של דגימה S-10136 נמצאת בטווח?", "expected_answer": "טווח תקין: 70-100 mg/dL. התוצאה מחוץ לטווח (OOS).", "expected_sample_id": "S-10136", "category": "range_reasoning"}
