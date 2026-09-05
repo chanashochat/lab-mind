@@ -1,0 +1,278 @@
+Total human-scored rows across all files: 52
+
+Criterion   Agreement    n    Judge-Human bias (avg)
+Fluency        88.5%   52                     -0.04
+Grammar        80.8%   52                     +0.06
+Tone           57.7%   52                     +0.60
+Length         82.7%   52                     +0.13
+Grounding      90.4%   52                     +0.02
+
+=== Disagreements on Fluency (6 rows) ===
+
+[assignment_02.xlsx] human=ok judge=bad
+  Q: האם דגימה S-10038 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10038 תקלה (OOS).
+  judge explanation: המשפט 'הבדיקה של דגימה S-10038 תקלה (OOS)' אינו תחבירי כראוי - חסר פועל מוגדר, והמילה 'תקלה' משמשת בצורה לא טבעית במקום ניסוח כמו 'נכשלה' או 'חרגה'. יש לקרוא את המשפט פעמיים כדי להבין את הכוונה.
+
+[assignment_02.xlsx] human=bad judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?
+  A: ההתוצאת בדיקת ה-ALT עבור דגימה S-10090 היא 7.0 U/L.
+  judge explanation: The sentence is a single short statement, and aside from one malformed word ('ההתוצאת', which reads as a duplicated definite article) the meaning is immediately clear without needing to re-read. This is a single stiff/awkward spot rather than multiple such issues.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=ok judge=bad
+  Q: האם דגימה S-10038 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10038 תקלה (OOS).
+  judge explanation: The sentence 'הבדיקה של דגימה S-10038 תקלה (OOS)' is missing a proper verb and reads as garbled Hebrew — 'תקלה' is a noun ('malfunction') used where a verb or predicate is expected, forcing the reader to re-parse the sentence to guess the intended meaning ('is OOS').
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?
+  A: ההתוצאת בדיקת ה-ALT עבור דגימה S-10090 היא 7.0 U/L.
+  judge explanation: The sentence begins with the malformed word 'ההתוצאת' (a doubled/incorrect article on a construct-state noun), which is stiff and clearly a translation-style artifact, but the overall meaning is still graspable without needing to re-read the whole sentence.
+
+[assignment_02_exp3_haiku.xlsx] human=good judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-Glucose עבור דגימה S-10112?
+  A: תוצאת בדיקת ה-Glucose עבור דגימה S-10112 היא 82.16 mg/dL, וההסתברות היא תקינה (Pass) בהתאם לטווח ההתייחסות של 70.0-100.0 mg/dL.
+  judge explanation: רוב המשפט קריא וזורם, אך הביטוי 'וההסתברות היא תקינה' הוא ניסוח לא טבעי - המילה 'הסתברות' (probability) אינה מתאימה להקשר של סטטוס בדיקה (Pass/OOS), ונשמעת כתרגום מילולי או שגיאת ניסוח. עם זאת, המשמעות הכוללת עדיין מובנת בקריאה ראשונה.
+
+[assignment_02_exp3_haiku.xlsx] human=good judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10057?
+  A: תוצאת בדיקת ה-Creatinine עבור דגימה S-10057 היא 0.81 mg/dL, וההתוצאה בתחום התקין (0.6-1.3 mg/dL).
+  judge explanation: The sentence is understandable and mostly natural, though the phrase 'וההתוצאה בתחום התקין' feels slightly clipped/awkward (missing verb, could read 'והתוצאה נמצאת בתחום התקין'), which is a minor stiffness but doesn't require rereading.
+
+=== Disagreements on Grammar (10 rows) ===
+
+[assignment_02.xlsx] human=good judge=bad
+  Q: האם דגימה S-10038 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10038 תקלה (OOS).
+  judge explanation: השימוש במילה 'תקלה' כפועל/תיאור מצב ללא התאמה תחבירית תקנית פוגם בהבנת המשפט - זו טעות שמערפלת את המשמעות (האם הכוונה לתקלה במכשיר או לתוצאה חריגה של הדגימה עצמה), ולא רק טעות קוסמטית קלה.
+
+[assignment_02.xlsx] human=bad judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10057?
+  A: ההתוצאת בדיקת ה-Creatinine עבור דגימה S-10057 היא 0.81 mg/dL.
+  judge explanation: The word 'ההתוצאת' appears to be a malformed spelling/construct-state error — it seems to redundantly combine the definite article with the construct noun ('תוצאת'), which is not standard Hebrew. This is a single error, but it does not obscure or change the core meaning of the sentence (the value 0.81 mg/dL is still clearly attributed to the Creatinine test).
+
+[assignment_02.xlsx] human=bad judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?
+  A: ההתוצאת בדיקת ה-ALT עבור דגימה S-10090 היא 7.0 U/L.
+  judge explanation: 'ההתוצאת' is grammatically malformed — it appears to double up the definite article incorrectly (should be 'תוצאת' in construct state, or 'התוצאה של'). This is one clear spelling/construct-state error, but it does not obscure the overall meaning of the sentence.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-Glucose עבור דגימה S-10112?
+  A: ה TFT של דגימה S-10112 היא 82.16 mg/dL.
+  judge explanation: The construction 'ה TFT' lacks the required hyphen (מקף) that Hebrew orthography uses when attaching the definite article to a foreign-script acronym (should be 'ה-TFT'). This is a single, relatively minor punctuation slip that doesn't by itself obscure the numeric value or unit, which are stated correctly.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10057?
+  A: הנתונים שמענו עליה הם 0.81 mg/dL.
+  judge explanation: There are no spelling mistakes and the gender agreement between 'עליה' (fem., referring to the sample) and the plural verb 'הם' matching 'הנתונים' is technically consistent. The construction is unusual but not a clear grammatical violation (no obvious agreement slip or punctuation error), so it falls short of being clearly wrong.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10107?
+  A: הנתונים שמענו עליה הם 0.91 mg/dL.
+  judge explanation: No spelling, punctuation, or agreement errors are present — the plural noun 'הנתונים' matches the plural verb 'הם', and gender agreement with 'עליה' (referring to the feminine 'דגימה') is correct. The oddness is one of word choice/register rather than grammatical construction.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=good judge=bad
+  Q: האם דגימה S-10038 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10038 תקלה (OOS).
+  judge explanation: The core predicate of the sentence is missing or malformed ('תקלה' used incorrectly in place of a verb like 'נכשלה' or 'התקבלה כחריגה'), which is a structural error that obscures the intended meaning rather than a minor slip.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?
+  A: ההתוצאת בדיקת ה-ALT עבור דגימה S-10090 היא 7.0 U/L.
+  judge explanation: 'ההתוצאת בדיקת ה-ALT' contains a construct-state (סמיכות) error — the noun 'תוצאת' is already in construct form and should not carry the definite article 'ה' prefix (should be 'תוצאת בדיקת ה-ALT'). This is a single grammatical slip that doesn't obscure the overall meaning of the sentence.
+
+[assignment_02_exp3_haiku.xlsx] human=good judge=ok
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10057?
+  A: תוצאת בדיקת ה-Creatinine עבור דגימה S-10057 היא 0.81 mg/dL, וההתוצאה בתחום התקין (0.6-1.3 mg/dL).
+  judge explanation: The word 'וההתוצאה' appears to have an extra letter ה (ו+ה+התוצאה), a spelling slip that doesn't obscure the meaning. This is a single minor error.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: האם דגימה S-10116 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: דגימה S-10116 עברה את הבדיקה (Pass). ערך הקריאטינין של 0.78 mg/dL נמצא בטווח הרפרנס של 0.6-1.3 mg/dL.
+  judge explanation: No spelling, punctuation, or agreement errors are present. Numbers and units are correctly formatted.
+
+=== Disagreements on Tone (22 rows) ===
+
+[assignment_02.xlsx] human=bad judge=good
+  Q: האם דגימה S-10024 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10024 היא הבדיקה שמתאימה לאחרי ה上限 (reference_low) ו底线 (reference_high), ולכן היא בקצרה "Pass".
+  judge explanation: Aside from the garbled language, the tone itself is calm and factual, stating the Pass status without hedging, apology, or alarm. There's no marketing language or editorializing.
+
+[assignment_02.xlsx] human=ok judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10057?
+  A: ההתוצאת בדיקת ה-Creatinine עבור דגימה S-10057 היא 0.81 mg/dL.
+  judge explanation: The answer states the fact plainly and professionally, with no hedging, apology, or sales language, matching the calm lab-assistant voice expected for a routine value lookup.
+
+[assignment_02.xlsx] human=bad judge=ok
+  Q: האם דגימה S-10116 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10116 היא הבדיקה שמתאימה לאחרי ה上限 (reference_high = 1.3 mg/dL).
+  judge explanation: There's no marketing language, hedging, or alarmism present, but the answer is so garbled that it fails to convey the calm, precise professional voice expected — the confusion itself undermines confidence in the response, though not through classic tone lapses like editorializing.
+
+[assignment_02.xlsx] human=bad judge=good
+  Q: מהו טווח הייחוס התקין לבדיקת WBC_Count, והאם התוצאה 6.08 10^3/uL של דגימה S-10102 נמצאת בטווח?
+  A: הטווח הייחוס התקין הוא Pass. הערך המבוקש של WBC_Count הוא 6.08, שבדוגמה בסופית היא 10^3/uL.
+  judge explanation: Despite the confusing content, the tone itself is plain and factual with no marketing language, hedging, apology, or alarm.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Glucose עבור דגימה S-10112?
+  A: ה TFT של דגימה S-10112 היא 82.16 mg/dL.
+  judge explanation: The answer states the value plainly without hedging, apologizing, or marketing language, maintaining the calm, professional lab-assistant voice expected.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10057?
+  A: הנתונים שמענו עליה הם 0.81 mg/dL.
+  judge explanation: The answer states the value plainly without hedging, apologizing, or alarmist language, matching the calm, professional lab-assistant voice expected.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?
+  A: הנתונים שמענו עליה הם 7.0 ALT mg/dL.
+  judge explanation: Despite the confusing phrasing, there is no sales language, hedging, apology, alarm, or jokey treatment of the result — the voice remains plain and professional in intent.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Cholesterol_Total עבור דגימה S-10007?
+  A: ה resultat של בדיקת ה-Cholesterol_Total עבור דגימה S-10007 הוא 125.0 mg/dL.
+  judge explanation: Apart from the odd word choice, the sentence is calm, factual, and professional with no hedging, apology, or alarm.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10107?
+  A: הנתונים שמענו עליה הם 0.91 mg/dL.
+  judge explanation: The answer states the value plainly without editorializing, hedging, or alarm, maintaining a neutral professional tone despite the awkward phrasing.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=ok judge=good
+  Q: האם דגימה S-10038 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10038 תקלה (OOS).
+  judge explanation: Aside from the grammatical issue, the phrasing is plain and professional, with no hedging, alarm, or marketing language.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?
+  A: ההתוצאת בדיקת ה-ALT עבור דגימה S-10090 היא 7.0 U/L.
+  judge explanation: The answer states the fact plainly and professionally without hedging, apology, or alarm — consistent with a calm lab-assistant voice.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=ok
+  Q: האם דגימה S-10014 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10014 היא הבדיקה שמתאימה ל référence.Low של 135.0 מעלות כמישור, אך לא מתאימה ל référence.High של 145.0 מעלות כמישור. זה יכול להיות שמה של הבדיקה היא הבדיקה
+  judge explanation: There's no marketing language, alarmism, or jokey treatment of an abnormal result, but the hedging construction "זה יכול להיות" introduces an unneeded uncertainty/hedge about a fact that should be stated plainly, which counts as one lapse from the calm, precise professional voice expected.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=good
+  Q: מהו טווח הייחוס התקין לבדיקת WBC_Count, והאם התוצאה 6.08 10^3/uL של דגימה S-10102 נמצאת בטווח?
+  A: הטווח הייחוס התקין הוא Pass. הערך המבוקש של WBC_Count הוא 6.08, שבדוגמה בסופית היא 10^3/uL.
+  judge explanation: The answer is terse and factual-sounding without hedging, apologizing, or marketing language, even though its content is confused. On the narrow tone axis (calm, professional voice) there is no lapse.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: האם דגימה S-10038 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: דגימה S-10038 עברה את הבדיקה (Pass). ערך WBC_Count היה 6.38 10^3/uL, בתוך טווח ההתייחסות של 4.0-11.0.
+  judge explanation: The answer states the fact plainly and professionally, with no hedging, apology, or marketing language.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Glucose עבור דגימה S-10112?
+  A: תוצאת בדיקת ה-Glucose עבור דגימה S-10112 היא 82.16 mg/dL, וההסתברות היא תקינה (Pass) בהתאם לטווח ההתייחסות של 70.0-100.0 mg/dL.
+  judge explanation: הטון מקצועי, עניני וברור, ללא שפה שיווקית, התנצלות מיותרת או דרמטיזציה. מוסר את המידע בצורה נקייה.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: האם דגימה S-10024 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: דגימה S-10024 עברה את הבדיקה - הסטטוס הוא Pass. ערך הנתרן היה 140.58 mmol/L, הנמצא בתוך טווח ההתייחסות של 135.0-145.0 mmol/L.
+  judge explanation: The tone is calm, factual, and professional, stating the status and supporting value without hedging or embellishment.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10057?
+  A: תוצאת בדיקת ה-Creatinine עבור דגימה S-10057 היא 0.81 mg/dL, וההתוצאה בתחום התקין (0.6-1.3 mg/dL).
+  judge explanation: The answer states the fact plainly and professionally, with no hedging, apology, or marketing language.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: האם דגימה S-10116 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: דגימה S-10116 עברה את הבדיקה (Pass). ערך הקריאטינין של 0.78 mg/dL נמצא בטווח הרפרנס של 0.6-1.3 mg/dL.
+  judge explanation: The answer states the fact plainly and professionally without hedging, apologizing, or alarmist language.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?
+  A: תוצאת בדיקת ה-ALT עבור דגימה S-10090 הייתה 31.08 U/L, וזו תוצאה תקינה (בטווח הייחוס של 7.0-56.0 U/L).
+  judge explanation: הטון מקצועי, עניני ורגוע, ללא ניסוחים שיווקיים או התנצלויות.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Cholesterol_Total עבור דגימה S-10007?
+  A: תוצאת בדיקת ה-Cholesterol_Total עבור דגימה S-10007 היא 118.51 mg/dL, וערך זה נמוך מהטווח הרפואי (125.0-200.0 mg/dL) והסטטוס הוא OOS.
+  judge explanation: הניסוח עניני, מקצועי וללא הבעת דאגה, התנצלות או שיווקיות - מתאים לקול עוזר מעבדה.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10107?
+  A: תוצאת בדיקת ה-Creatinine עבור דגימה S-10107 היא 0.91 mg/dL, ותוצאה זו עברה בהצלחה (Pass) בטווח הייחוס 0.6-1.3 mg/dL.
+  judge explanation: The answer states the fact plainly and professionally, matching the calm, factual lab-assistant voice with no hedging or alarm.
+
+[assignment_02_exp3_haiku.xlsx] human=ok judge=good
+  Q: האם דגימה S-10014 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: דגימה S-10014 עברה את הבדיקה (Pass). רמת הנתרן היתה 141.84 mmol/L, בתוך טווח ההתייחסות של 135.0-145.0 mmol/L.
+  judge explanation: הטון מקצועי ורגוע, מוסר עובדות בצורה ישירה ללא הבעת דעה, התנצלות או שיווקיות.
+
+=== Disagreements on Length (9 rows) ===
+
+[assignment_02.xlsx] human=good judge=ok
+  Q: האם דגימה S-10024 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10024 היא הבדיקה שמתאימה לאחרי ה上限 (reference_low) ו底线 (reference_high), ולכן היא בקצרה "Pass".
+  judge explanation: The question only asks for Pass/OOS status. The answer is a single (garbled) sentence, but it brings in an irrelevant aside about reference_low/reference_high fields, which was not asked for, even though no numeric values are given.
+
+[assignment_02.xlsx] human=good judge=bad
+  Q: האם דגימה S-10116 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10116 היא הבדיקה שמתאימה לאחרי ה上限 (reference_high = 1.3 mg/dL).
+  judge explanation: The question asks specifically for Pass or OOS status, but the answer never states this status at all. Instead it presents a confusing, seemingly wrong implication about the reference_high without ever giving the direct Pass/OOS answer, effectively burying or omitting the actual answer.
+
+[assignment_02.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Cholesterol_Total עבור דגימה S-10007?
+  A: 125.0 mg/dL
+  judge explanation: התשובה תמציתית וישירה, כוללת רק את הערך המספרי המבוקש ללא תוספות מיותרות.
+
+[assignment_02.xlsx] human=good judge=bad
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10107?
+  A: הנתונים ש_given לא מוגבלים על ידי את המספרים של התוצאות או הסיכום של הארגון, ושהנה יש בערך של 0.91 mg/dL. אני ממליץ לחשוב על עזרה עם המספרים של התוצאות או הסיכום של הארגון.
+  judge explanation: While the correct value (0.91 mg/dL) is technically present, it is buried inside a confusing, garbled two-sentence structure that includes an irrelevant and incoherent recommendation about 'thinking about help with the numbers of the organization's summary.' This obscures the direct answer rather than stating it plainly.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?
+  A: הנתונים שמענו עליה הם 7.0 ALT mg/dL.
+  judge explanation: The answer is a single short sentence that attempts to directly state the requested ALT value with no padding or irrelevant asides.
+
+[assignment_02_exp1_fewshot.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Cholesterol_Total עבור דגימה S-10007?
+  A: ה resultat של בדיקת ה-Cholesterol_Total עבור דגימה S-10007 הוא 125.0 mg/dL.
+  judge explanation: The answer is a single sentence that directly states the value requested, with no padding or irrelevant asides.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=good
+  Q: האם דגימה S-10038 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10038 תקלה (OOS).
+  judge explanation: The answer is a single short sentence that attempts to directly state the Pass/OOS status as requested, with no padding or irrelevant asides.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-ALT עבור דגימה S-10090?
+  A: ההתוצאת בדיקת ה-ALT עבור דגימה S-10090 היא 7.0 U/L.
+  judge explanation: The answer is a single sentence that directly states a value in response to a value-lookup question, with no padding or irrelevant asides.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Cholesterol_Total עבור דגימה S-10007?
+  A: 125.0 mg/dL
+  judge explanation: השאלה ביקשה את תוצאת הבדיקה, והתשובה נותנת ערך יחיד וקצר ללא פדינג, בדיוק כמצופה מתשובת value_lookup.
+
+=== Disagreements on Grounding (5 rows) ===
+
+[assignment_02.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10107?
+  A: הנתונים ש_given לא מוגבלים על ידי את המספרים של התוצאות או הסיכום של הארגון, ושהנה יש בערך של 0.91 mg/dL. אני ממליץ לחשוב על עזרה עם המספרים של התוצאות או הסיכום של הארגון.
+  judge explanation: The core factual claim — Creatinine result of 0.91 mg/dL for S-10107 — matches exactly the value in samples.csv. No incorrect status, range, or SOP claim is made; the surrounding gibberish doesn't introduce any false factual content.
+
+[assignment_02_exp1_fewshot.xlsx] human=good judge=bad
+  Q: מה הייתה תוצאת בדיקת ה-Glucose עבור דגימה S-10112?
+  A: ה TFT של דגימה S-10112 היא 82.16 mg/dL.
+  judge explanation: The KB row for S-10112 lists the test_name as 'Glucose', not 'TFT'. While the numeric value (82.16) and unit (mg/dL) match the Glucose row exactly, the answer mislabels the test as 'TFT', an acronym not present anywhere in the knowledge base and unrelated to Glucose. This constitutes an invented/incorrect identification of the test, which is a hallucinated claim about what was measured, even though the value itself is correct.
+
+[assignment_02_exp1_fewshot.xlsx] human=good judge=bad
+  Q: מהו טווח הייחוס התקין לבדיקת WBC_Count, והאם התוצאה 6.08 10^3/uL של דגימה S-10102 נמצאת בטווח?
+  A: טווח תקין: 4.0-11.0 mg/dL. התוצאה בטווח.
+  judge explanation: טווח הערכים (4.0-11.0) וסטטוס ה-Pass תואמים את הנתונים ב-samples.csv וב-reference_ranges.csv, אך היחידה שצוינה - mg/dL - שגויה ומנוגדת למקור: היחידה הנכונה עבור WBC_Count היא 10^3/uL, לא mg/dL. זהו ערך שגוי שסותר את בסיס הידע, ולכן מהווה טעות עניינית משמעותית (unit hallucination) שעלולה להטעות.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=ok
+  Q: האם דגימה S-10024 עברה את הבדיקה (Pass) או שהתקבלה חריגה (OOS)?
+  A: הבדיקה של דגימה S-10024 היא הבדיקה שמתאימה לאחרי ה上限 (reference_low) ו底线 (reference_high), ולכן היא בקצרה "Pass".
+  judge explanation: The final stated status 'Pass' matches the samples.csv row for S-10024 (status: Pass), so the core factual claim is correct. However, the explanation attempts to reference reference_low/reference_high but garbles their meaning (labeling them with swapped/incorrect foreign terms), which is an imprecise and confusing restatement of the SOP-002 logic without stating incorrect numeric values outright.
+
+[assignment_02_exp2_maxtokens70.xlsx] human=bad judge=good
+  Q: מה הייתה תוצאת בדיקת ה-Creatinine עבור דגימה S-10107?
+  A: הנתונים ש_given לא מוגבלים על ידי את המספרים של התוצאות או הסיכום של הארגון, ושהנה יש בערך של 0.91 mg/dL. אני ממליץ לחשוב על עזרה עם המספרים של התוצאות או הסיכום של הארגון.
+  judge explanation: The one identifiable factual claim — Creatinine result of 0.91 mg/dL — matches the samples.csv row exactly (S-10107, Creatinine, 0.91, mg/dL). No other verifiable factual claims (status, range, SOP rule) are made, and no invented or contradicted values appear.
